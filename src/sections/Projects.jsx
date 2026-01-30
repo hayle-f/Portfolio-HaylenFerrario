@@ -40,14 +40,21 @@ const Projects = () => {
     },
     {
       title: 'Portfolio personal',
-      description: '', 
+      description: 'Portfolio personal con React y Tailwind CSS, combinando diseño moderno y animaciones con Framer Motion. Presenta proyectos destacados, habilidades y un formulario de contacto funcional, además de enlaces a redes profesionales y CV.', 
       tags: ['React', 'Tailwind CSS', 'Framer Motion' ],
-      github: '#', 
+      github: 'https://github.com/hayle-f/Portfolio-HaylenFerrario.git', 
       demo: '',
     },
     {
       title: 'Mandala Cakes',
-      description: 'E-commerce desarrollado en Bubble.io. Caso de estudio orientado a producto, UX y validación de una idea real.',
+      description:(
+        <>
+        Mandala Cakes es un e‑commerce desarrollado en Bubble.io durante un curso de NoCode, basado en una tienda de pastelería real. Es un proyecto pensado como caso de estudio para mostrar habilidades en UX, diseño de producto, experiencia de usuario y desarrollo sin código.
+        <small className="text-gray-400 block mt-2 tracking-wider">
+          Nota: Proyecto funcional y operativo, con mejoras pendientes y potencial proyecto full stack.
+        </small>
+        </>
+        ),
       image: 'URL_DE_IMAGEN_MANDALA', 
       tags: ['Bubble.io', 'UX', 'Producto digital'],
       github: '#', 
@@ -84,15 +91,34 @@ const Projects = () => {
             />
             
             {/* Overlay con botones de GitHub y Demo que aparecen al hover */}
-            <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent opacity-30 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-4 gap-4">
-              {/* Botón de GitHub (usa frontend si es objeto) */}
-              <a
-                href={typeof projects[0].github === 'object' ? projects[0].github.frontend : projects[0].github}
-                className="p-2 rounded-full hover:bg-pink-600/60 text-white transition-colors duration-300"
-                aria-label="GitHub"
-              >
-                <Github className="w-5 h-5" />
-              </a>
+            <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent opacity-40 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-4 gap-4">
+               {/* Botón GitHub Frontend */}
+              <div className="flex flex-col items-center">
+                <span className="text-xs text-white tracking-wider mb-1">Frontend</span>
+                <a
+                  href={projects[0].github.frontend}
+                  className="p-2 rounded-full hover:bg-pink-600/60 text-white transition-colors duration-300 flex items-center justify-center"
+                  aria-label="GitHub Frontend"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Github className="w-5 h-5" />
+                </a>
+              </div>
+
+              {/* Botón GitHub Backend */}
+              <div className="flex flex-col items-center">
+                <span className="text-xs text-white tracking-wider  mb-1">Backend</span>
+                <a
+                  href={projects[0].github.backend}
+                  className="p-2 rounded-full hover:bg-pink-600/60 text-white transition-colors duration-300 flex items-center justify-center"
+                  aria-label="GitHub Backend"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Github className="w-5 h-5" />
+                </a>
+              </div>
               
               {/* Botón de Demo */}
               <a
@@ -108,13 +134,13 @@ const Projects = () => {
           {/* Contenido del proyecto */}
           <div className="p-6 shrink-0">
             {/* Título del proyecto */}
-            <h3 className="text-xl mb-3 group-hover:text-pink-600 transition-colors duration-300">
+            <h3 className="text-lg sm:text-xl mb-3 group-hover:text-pink-600 transition-colors duration-300">
               {projects[0].title}
             </h3>
             
             {/* Descripción del proyecto */}
             <p 
-              className="text-base sm:text-lg text-gray-600 dark:text-gray-400 mb-4"
+              className="text-sm sm:text-base md:text-lg text-gray-600 dark:text-gray-400 mb-4"
             >
               {projects[0].description}
             </p>
@@ -155,36 +181,43 @@ const Projects = () => {
                 />
                 
                 {/* Overlay con botones de GitHub y Demo que aparecen al hover */}
-                <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent opacity-30 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-4 gap-4">
+                <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent opacity-40 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-4 gap-4">
                   {/* Botón de GitHub */}
                   <a
                     href={project.github}
                     className="p-2 rounded-full hover:bg-pink-600/60 text-white transition-colors duration-300"
                     aria-label="GitHub"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <Github className="w-5 h-5" />
                   </a>
                   
-                  {/* Botón de Demo */}
-                  <a
-                    href={project.demo}
-                    className="p-2 rounded-full hover:bg-pink-600/60 text-white transition-colors duration-300"
-                    aria-label="Demo"
-                  >
-                    <ExternalLink className="w-5 h-5" />
-                  </a>
+                  {projects.demo && 
+                    // Botón de Demo
+                    <a
+                      href={project.demo}
+                      className="p-2 rounded-full hover:bg-pink-600/60 text-white transition-colors duration-300"
+                      aria-label="Demo"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <ExternalLink className="w-5 h-5" />
+                    </a>
+                  }
+                  
                 </div>
               </div>
 
               {/* Contenido del proyecto */}
               <div className="p-6 shrink-0">
                 {/* Título del proyecto */}
-                <h3 className="text-xl mb-3 group-hover:text-pink-600 transition-colors duration-300">
+                <h3 className="text-lg sm:text-xl mb-3 group-hover:text-pink-600 transition-colors duration-300">
                   {project.title}
                 </h3>
                 
                 {/* Descripción del proyecto */}
-                <p className="text-base sm:text-lg text-gray-600 dark:text-gray-400 mb-4">
+                <p className="text-sm sm:text-base md:text-lg text-gray-600 dark:text-gray-400 mb-4">
                   {project.description}
                 </p>
               </div>

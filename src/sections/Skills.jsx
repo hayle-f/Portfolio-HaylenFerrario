@@ -40,7 +40,7 @@ const Skills = () => {
             { name: 'VS Code', icon: VscVscode, color: 'text-blue-400' }, 
             { name: 'Postman', icon: SiPostman, color: 'text-orange-500' },
             { name: 'Netlify', icon: SiNetlify, color: 'text-cyan-400' },
-            { name: 'Render', icon: SiRender, color: 'text-gray-800' }, 
+            { name: 'Render', icon: SiRender, color: 'text-gray-800 dark:text-gray-600' }, 
         ],
         },
     ]

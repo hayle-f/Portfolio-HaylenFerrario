@@ -51,8 +51,7 @@ const Hero = ({ theme }) => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4, duration: 0.8 }}
           >
-            Con base en backend y en constante aprendizaje.
-            Apasionada por aprender y crear experiencias digitales limpias y funcionales.
+            Desarrollo interfaces intuitivas, claras y accesibles, con conocimientos de backend como apoyo para soluciones completas.
           </motion.p>
 
           {/* Botones de Call To Action */}
