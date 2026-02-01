@@ -46,12 +46,12 @@ const Hero = ({ theme }) => {
           
           {/* Subtítulo descriptivo */}
           <motion.p 
-            className="text-base sm:text-lg md:text-2xl text-gray-500 dark:text-gray-400 sm:max-w-2xl mx-auto mb-12"
+            className="text-base sm:text-lg md:text-2xl text-gray-500 dark:text-gray-400 max-w-lg sm:max-w-xl mx-auto mb-12"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4, duration: 0.8 }}
           >
-            Desarrollo interfaces intuitivas, claras y accesibles, con conocimientos de backend como apoyo para soluciones completas.
+            Desarrollo interfaces intuitivas, claras y accesibles. <br /> Con conocimientos de backend como apoyo para soluciones completas.
           </motion.p>
 
           {/* Botones de Call To Action */}

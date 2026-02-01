@@ -25,4 +25,6 @@ Dentro de este portfolio se muestran algunos de mis proyectos más relevantes:
 
 ---
 
-✨ **Nota:** Este portfolio sirve como **muestra de mis habilidades técnicas y de diseño**, y se actualizará regularmente con nuevos proyectos y mejoras.
+✨ **Nota:** Este portfolio refleja mi crecimiento como profesional y mis habilidades en programación y diseño de interfaces, actualizado constantemente con nuevos proyectos y mejoras.
+
+
