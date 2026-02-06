@@ -24,7 +24,7 @@ const Projects = () => {
           </small>
         </>
       ),
-      image: 'src/assets/SoulBeat.png', 
+      image: '/imgs/SoulBeat.png',
       tags: ['React', 'Tailwind CSS', 'Node.js', 'Express', 'MongoDB', 'Framer Motion', 'JWT', 'Axios', 'React Toastify'],
       github: {
         frontend: 'https://github.com/hayle-f/Soulbeat-Frontend.git',
@@ -39,7 +39,7 @@ const Projects = () => {
     {
       title: 'Dashboard de países',
       description: 'Proyecto backend en Node.js y MongoDB, con dashboard interactivo renderizado en EJS. Permite explorar, filtrar y administrar información de países, incluyendo CRUD completo, validaciones robustas y consumo de datos desde la API RESTCountries.',
-      image: 'src/assets/DashboardPaises.png', 
+      image: '/imgs/DashboardPaises.png', 
       tags: ['Node.js', 'Express', 'MongoDB', 'Mongoose', 'Axios', 'EJS', 'Express Validator']
 ,
       github: 'https://github.com/hayle-f/Dashboard-Paises.git',
@@ -48,7 +48,7 @@ const Projects = () => {
     {
       title: 'Portfolio personal',
       description: 'Portfolio personal con React y Tailwind CSS, combinando diseño moderno y animaciones con Framer Motion. Presenta proyectos destacados, habilidades y un formulario de contacto funcional, además de enlaces a redes profesionales y CV.', 
-      image: 'src/assets/Portfolio.png', 
+      image: '/imgs/Portfolio.png', 
       tags: ['React', 'Tailwind CSS', 'Framer Motion' ],
       github: 'https://github.com/hayle-f/Portfolio-HaylenFerrario.git', 
       demo: '',
@@ -63,7 +63,7 @@ const Projects = () => {
         </small>
         </>
         ),
-      image: 'src/assets/Mandala.png', 
+      image: '/imgs/Mandala.png', 
       tags: ['Bubble.io', 'UX', 'Producto digital'],
       github: '', 
       demo: 'https://landingpagecoder.bubbleapps.io/version-test/',
