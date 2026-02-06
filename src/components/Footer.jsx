@@ -1,5 +1,3 @@
-import { Heart } from 'lucide-react';
-
 /**
  * Componente Footer
  * Pie de página simple con créditos y año actual
