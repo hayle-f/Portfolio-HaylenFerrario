@@ -19,8 +19,11 @@ const Projects = () => {
             Antes de usar la demo, hacé clic en el botón "Server" y esperá a que el backend esté listo.
           </small>
           Proyecto full stack personal de e-commerce de auriculares. El frontend está construido en React con Tailwind CSS, ofreciendo un diseño moderno, animaciones suaves y un panel de administración completo. El backend utiliza Node.js, Express y MongoDB, manejando autenticación, roles, permisos, CRUD de productos, variantes, validaciones y subida de imágenes. Incluye funcionalidades como favoritos, carrito de compras, filtros dinámicos, notificaciones personalizadas y persistencia de tema claro/oscuro. Deploy: frontend en Netlify, backend en Render.<br />
+          <div className='mt-2'>
+            <p className='text-[10.5px] tracking-wider sm:text-[12px]'>Usuario admin: - Email: admin@soulbeat.com - Contraseña: AdminPass1234</p>
+          </div>
           <small className="text-gray-400 block mt-2 tracking-wider">
-            Nota: Este proyecto fue el trabajo final de la diplomatura Full Stack, con mejoras pendientes para futuras implementaciones.
+            Nota: Este proyecto fue el trabajo final de la diplomatura Full Stack, con mejoras pendientes para futuras implementaciones. 
           </small>
         </>
       ),
@@ -58,6 +61,9 @@ const Projects = () => {
       description:(
         <>
         Mandala Cakes es un e‑commerce desarrollado en Bubble.io durante un curso de NoCode, basado en una tienda de pastelería real. Es un proyecto pensado como caso de estudio para mostrar habilidades en UX, diseño de producto, experiencia de usuario y desarrollo sin código.
+        <div className='mt-2'>
+            <p className='text-[10.5px] tracking-wider sm:text-[12px]'>Usuario admin: - Email: admin@test.com  - Contraseña: 2468</p>
+        </div>
         <small className="text-gray-400 block mt-2 tracking-wider">
           Nota: Proyecto funcional y operativo, con mejoras pendientes y potencial proyecto full stack.
         </small>
