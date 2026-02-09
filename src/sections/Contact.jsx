@@ -68,7 +68,7 @@ const Contact = () => {
               ))}
               {/* Descarga CV */}
               <a
-                href="/cv.pdf" // Cambia a la ruta real de tu CV
+                href="/cv-HaylenFerrario-Developer2026.pdf" // Cambia a la ruta real de tu CV
                 download
                 className="flex items-center gap-3 text-gray-700 dark:text-gray-300 hover:text-pink-500 transition-colors"
               >
