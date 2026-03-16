@@ -12,7 +12,7 @@ const Contact = () => {
 
   const socialLinks = [
     { name: 'GitHub', icon: Github, url: 'https://github.com/hayle-f' },
-    { name: 'LinkedIn', icon: Linkedin, url: 'https://www.linkedin.com/in/hayl%C3%A9n-ferrario-9a334048/' }
+    { name: 'LinkedIn', icon: Linkedin, url: 'https://www.linkedin.com/in/haylenferrario/' }
   ]
 
   return (
